@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class|Constructor</title>
+</head>
+<body>
+    <h2>hello</h2>
+</body>
+</html>
+
+<script>
+
+    /*class name{
+        constructor(name){
+            this.name=name;
+        }
+        print(){
+            console.log(this.name);
+        }
+    }
+
+    var glow= new name("demos");*/
+
+    //glow.print();
+    //classes are way to create object like Promise and functionConstructor
+    //Stack
+
+    class Stack{
+        constructor(){
+            this.length=0;
+            this.stack=[];
+        }
+        push(el){
+            this.stack[this.length]=el;
+            this.length++;
+        }
+        pop(){
+            /*var removed=this.stack[this.length-1];
+            this.length-=1;
+            delete this.stack[this.length];*/
+            this.stack.pop();
+            this.length--
+            //console.log(removed);
+        }
+        top(){
+            console.log(this.stack[this.length-1]);
+            //this will going to print stack last element
+        }
+        print(){
+            console.log(this.stack);
+            //this will going to print the whole stack
+        }
+        printReverse(){
+            console.log((this.stack).reverse());
+            //this will going to print the stack in reverse format
+        }
+        size(){
+            console.log(this.length);
+            //this will going to print the stack length;
+        }
+    }
+
+    let stack1= new Stack();
+    stack1.push(10);
+    stack1.push(20);
+    stack1.push(30);
+    stack1.push(40);
+    stack1.push(50);
+
+    stack1.pop()
+
+    console.log(stack1);//this will going to print stack object
+
+    stack1.top();//this will going to print stack last element
+
+    stack1.print();//this will going to print the whole stack
+
+    stack1.printReverse();//this will going to print the stack in reverse format
+
+    stack1.size();//this will going to print the stack length;
+
+
+    
+    //bug(celphon);
+    //bug("hello soar apple");
+
+
+
+
+</script>
